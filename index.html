@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Votación</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>FORMULARIO DE VOTACIÓN:</h1>
+    <form id="votacionForm" method="post" action="procesar.php">
+        <label for="nombre_apellido">Nombre y Apellido:</label>
+        <input type="text" id="nombre_apellido" name="nombre_apellido" required><br><br>
+
+        <label for="alias">Alias:</label>
+        <input type="text" id="alias" name="alias" required><br><br>
+
+        <label for="rut">RUT:</label>
+        <input type="text" id="rut" name="rut" required oninput="formatearRUT(this)"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="region">Región:</label>
+        <select id="region" name="region" required><option value="">Seleccione Región</option></select><br><br>
+
+        <label for="comuna">Comuna:</label>
+        <select id="comuna" name="comuna" required><option value="">Seleccione Comuna</option></select><br><br>
+
+        <label for="candidato">Candidato:</label>
+        <select id="candidato" name="candidato" required><option value="">Seleccione candidato</option></select><br><br>
+
+        <label>¿Cómo se enteró de Nosotros?:</label><br>
+        <input type="checkbox" name="como_nos_entero[]" value="Web"> Web
+        <input type="checkbox" name="como_nos_entero[]" value="TV"> TV
+        <input type="checkbox" name="como_nos_entero[]" value="Redes Sociales"> Redes Sociales
+        <input type="checkbox" name="como_nos_entero[]" value="Amigo"> Amigo<br><br>
+
+        <button type="submit">Votar</button>
+    </form>
+</body>
+</html>

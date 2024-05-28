@@ -1,0 +1,47 @@
+# Instrucciones para instalar el proyecto de Sistema de Votación
+
+## Requisitos
+- XAMPP o similar con PHP y MySQL
+- Navegador web
+
+## Versiones Recomendadas
+- PHP: 8.0
+- MySQL: 5.7
+
+## Pasos para la instalación
+
+1. **Configurar la Base de Datos**
+   - Abre phpMyAdmin en tu navegador (`http://localhost/phpmyadmin`).
+   - Importa el archivo `sistema_votacion.sql` para crear las tablas y agregar los datos necesarios.
+     - En phpMyAdmin, selecciona la base de datos `sistema_votacion`.
+     - Haz clic en la pestaña `Importar`.
+     - Selecciona el archivo `sistema_votacion.sql` desde tu computadora y haz clic en `Continuar`.
+
+2. **Colocar los Archivos en el Servidor**
+   - Copia todos los archivos (HTML, JavaScript, y PHP) en el directorio `htdocs` de XAMPP (generalmente en `C:\xampp\htdocs`).
+     - Archivos necesarios:
+       - `index.html`
+       - `script.js`
+       - `cargar_regiones.php`
+       - `cargar_comunas.php`
+       - `cargar_candidatos.php`
+       - `procesar.php`
+
+3. **Iniciar XAMPP**
+   - Abre el panel de control de XAMPP y enciende los módulos de Apache y MySQL.
+
+4. **Acceder al Sistema**
+   - Abre tu navegador y ve a `http://localhost/index.html`.
+
+## Archivos del Proyecto
+
+- `sistema_votacion.sql`: Contiene la estructura de la base de datos y los datos iniciales.
+- `index.html`: Archivo HTML con el formulario de votación.
+- `script.js`: Archivo JavaScript con las funciones para cargar regiones, comunas, candidatos y validar el formulario.
+- `cargar_regiones.php`: Archivo PHP para cargar las regiones desde la base de datos.
+- `cargar_comunas.php`: Archivo PHP para cargar las comunas basadas en la región seleccionada.
+- `cargar_candidatos.php`: Archivo PHP para cargar los candidatos desde la base de datos.
+- `procesar.php`: Archivo PHP para procesar y guardar los datos del formulario en la base de datos.
+
+
+
