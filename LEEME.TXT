@@ -10,15 +10,9 @@
 
 ## Pasos para la instalación
 
-1. **Configurar la Base de Datos**
-   - Abre phpMyAdmin en tu navegador (`http://localhost/phpmyadmin`).
-   - Importa el archivo `sistema_votacion.sql` para crear las tablas y agregar los datos necesarios.
-     - En phpMyAdmin, selecciona la base de datos `sistema_votacion`.
-     - Haz clic en la pestaña `Importar`.
-     - Selecciona el archivo `sistema_votacion.sql` desde tu computadora y haz clic en `Continuar`.
-
-2. **Colocar los Archivos en el Servidor**
-   - Copia todos los archivos (HTML, JavaScript, y PHP) en el directorio `htdocs` de XAMPP (generalmente en `C:\xampp\htdocs`).
+1. **Colocar los Archivos en el Servidor**
+   - Clonar SistemaDeVotacion desde github en el directorio `htdocs` de XAMPP (generalmente en `C:\xampp\htdocs`).
+     -git clone https://github.com/dsmv04/SistemaDeVotacion.
      - Archivos necesarios:
        - `index.html`
        - `script.js`
@@ -26,6 +20,15 @@
        - `cargar_comunas.php`
        - `cargar_candidatos.php`
        - `procesar.php`
+
+2. **Configurar la Base de Datos**
+   - Abre phpMyAdmin en tu navegador (`http://localhost/phpmyadmin`).
+   - Importa el archivo `sistema_votacion.sql` para crear las tablas y agregar los datos necesarios.
+     - En phpMyAdmin, selecciona la base de datos `sistema_votacion`.
+     - Haz clic en la pestaña `Importar`.
+     - Selecciona el archivo `sistema_votacion.sql` desde tu computadora y haz clic en `Continuar`.
+
+
 
 3. **Iniciar XAMPP**
    - Abre el panel de control de XAMPP y enciende los módulos de Apache y MySQL.
