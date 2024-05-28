@@ -34,7 +34,7 @@
    - Abre el panel de control de XAMPP y enciende los módulos de Apache y MySQL.
 
 4. **Acceder al Sistema**
-   - Abre tu navegador y ve a `http://localhost/index.html`.
+   - Abre tu navegador y ve a `http://localhost/SistemaDeVotacion`.
 
 ## Archivos del Proyecto
 
